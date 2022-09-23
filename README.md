@@ -63,7 +63,7 @@ Copier le fichier plugin.py dans le répertoire domoticz plugins/DomoticzSuez ou
 git clone https://github.com/yed30/DomoticzSuez
 ```
 
-Pour mettre à jour écrase le fichier plugin.py avec le nouveau ou se positionner dans le répertoire domoticz directory/plugins et exécuter la commande suivante:
+Pour mettre à jour le fichier plugin.py avec le nouveau ou se positionner dans le répertoire domoticz directory/plugins et exécuter la commande suivante:
 ```
 git pull
 ```
@@ -77,15 +77,19 @@ Redémarrer Domoticz.
 
 ### Configuration
 
-Ajouter le matériel Suez dans Domoticz au moyen du menu Configuration / Matériel, renseigner l'adresse e-mail et le mot de passe de votre compte toutsurmoneau. Vous pouvez choisir le nombre de jours d'historique à récupérer, avec le champ "jours", quelque chose comme 5 doit marcher. Vous pouvez juste mettre une fois plus de jours pour récupérer de l'historique et remettre ensuite un nombre plus bas. Mercide noter que, lors de mes tests, je n'ai pu récupérer plus de 800 jours d'historique. Si vous avez des problèmes, merci de mettre un nombre de jour plus bas.
+Ajouter le matériel Suez dans Domoticz au moyen du menu Configuration / Matériel, renseigner l'adresse e-mail et le mot de passe de votre compte toutsurmoneau. 
+
+Vous pouvez choisir le nombre de jours d'historique à récupérer, avec le champ "jours", quelque chose comme **5** est l'idéal. 
+
+Vous pouvez juste mettre une fois plus de jours pour récupérer de l'historique et remettre ensuite un nombre plus bas. Mercide noter que, lors de mes tests, je n'ai pu récupérer plus de 800 jours d'historique. Si vous avez des problèmes, merci de mettre un nombre de jour plus bas.
 
 Après activation du matériel, vous avez un nouveau dispositif de mesures qui suit votre consommation avec un bouton Log.
 
 ### Migration depuis le plugin Markourai
 ***Merci de vous assurez que vous avez effectué une sauvegarde de votre base de données.***
 Stop Domoticz et 
-Soit supprimer le répertoire  plugins/DomoticzSuez et réinstaller comme ci-dessus,
-Soit, si vous aviez utilisé git et exécuter les commandes suivantes:
+* Soit supprimer le répertoire  plugins/DomoticzSuez et réinstaller comme ci-dessus,
+* Soit, si vous aviez utilisé git et exécuter les commandes suivantes:
 ```
 git remote set-url origin https://github.com/yed30/DomoticzSuez
 git pull
