@@ -493,6 +493,7 @@ class BasePlugin:
     def onHeartbeat(self):
         """Handle Domoticz Heartbeat"""
         Domoticz.Debug("onHeartbeat() called")
+        self.iDaysLeft = self.iHistoryDaysForDaysView
         if datetime.now() > self.nextConnection:
             # We immediatly program next connection for tomorrow, if there is a problem, we will reprogram it sooner
             self.setNextConnection(True)
